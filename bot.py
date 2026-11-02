@@ -21,7 +21,7 @@ app.secret_key = SECRET_KEY
 
 # Allow only the JV-60FPS Netlify site to call the verification API.
 # This does not change the bot logic or Telegram handlers.
-CORS(app, resources={r"/verify/*": {"origins": "https://jv-studio-website.pages.dev/"}})
+CORS(app, resources={r"/verify/*": {"origins": "https://jv-studio-website.pages.dev"}})
 CORS(app, resources={r"/verify/*": {"origins": "https://colab.research.google.com/drive/1SL_ellKIYUot7-GEUVzp2-dNzJNi9SK1?authuser=3#scrollTo=pewapDBngJsV"}})
 
 # ── Database ─────────────────────────────────────────────────────────────────
